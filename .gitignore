@@ -93,3 +93,4 @@ proguardMapping.txt
 
 # test
 test app/
+input/

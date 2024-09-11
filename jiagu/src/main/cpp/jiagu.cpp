@@ -313,7 +313,7 @@ static void loadDex(JNIEnv *env, jobject application, jbyteArray dexArray) {
 
         if (g_sdk_int < 26) {
             jobject mCookie = openmemory_load_dex(env, art_handle, (char *) decryptdex + index, dexLength);
-            if (mCookie) {
+            if (mCookie) { // DexFile
                 dexobjs.push_back(mCookie);
             }
 

@@ -79,6 +79,15 @@ public class Main {
     }
 
     public static void main(String[] args) {
+//        java -jar pack.jar -apk input/$file -key keystore/testkey.jks -kp test111 -alias jiagu -ap test111
+        args = new String[] {
+                "-apk", "input/app-debug.apk",
+                "-key", "keystore/testkey.jks",
+                "-kp", "test111",
+                "-alias", "jiagu",
+                "-ap", "test111"
+        };
+
         parse(args);
 
         // 待加固的APK
